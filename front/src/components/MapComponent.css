@@ -1,0 +1,75 @@
+.map-container {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.map-error, .map-loading {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  color: #6c757d;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  text-align: center;
+  padding: 2rem;
+}
+
+.map-error {
+  background-color: #feeaea;
+  color: #e74c3c;
+  border-left: 4px solid #e74c3c;
+}
+
+.map-error p {
+  margin: 0.5rem 0;
+}
+
+.selected-location {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.map-controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.locate-me-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.locate-me-button:before {
+  content: "📍";
+  margin-right: 8px;
+}
+
+.locate-me-button:hover {
+  background-color: #2980b9;
+}
+
+.locate-me-button:active {
+  transform: translateY(1px);
+} 
